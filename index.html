@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAgency - Professional IT Services & Web Development</title>
+    <meta name="description" content="Leading IT agency providing web development, mobile apps, cloud solutions, and digital marketing. Transform your business with cutting-edge technology solutions.">
+    <meta name="keywords" content="IT services, web development, mobile apps, cloud solutions, digital marketing">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/ico-01.png">
+    
+    <link rel="stylesheet" href="assets/css/universal-slider.css">
+    <link rel="stylesheet" href="assets/css/faq-accordion.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+<body>
+    <div id="particles-js" class="particles-background"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container d-flex-between">
+            <!-- Logo -->
+            <div class="logo position-relative">
+                <img class="image" src="/assets/images/logo-01.png" alt="Logo">
+                <a class="overlay-link" href="/"></a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link active">Home</a></li>
+                    <li><a href="/pages/services.html" class="nav-link">Services</a></li>
+                    <li><a href="/pages/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="/pages//testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="/pages/team.html" class="nav-link">Team</a></li>
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-dropdown="menu-dropdown">Menu</a>
+                        <ul class="dropdown-menu" id="menu-dropdown">
+                            <li><a href="/pages/process.html" class="dropdown-item">Process</a></li>
+                            <li><a href="/pages/pricing.html" class="dropdown-item">Pricing</a></li>
+                            <li><a href="/pages/faqs.html" class="dropdown-item">FAQs</a></li>
+                            <li><a href="/pages/terms-conditions.html" class="dropdown-item">Terms & Conditions</a></li>
+                            <li><a href="/pages/privacy-policy.html" class="dropdown-item">Privacy Policy</a></li>
+                            <li><a href="/pages/blog/index.html" class="dropdown-item">Blogs</a></li>
+                            <li><a href="/pages/blog/article.html" class="dropdown-item">Blog Detail Page</a></li>
+                            <li><a href="/pages/buttons.html" class="dropdown-item">Buttons</a></li>
+                            <li><a href="/pages/typography.html" class="dropdown-item">Fonts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/pages/blog" class="nav-link">News</a></li>
+                </ul>
+            </nav>
+
+            <!-- Get Quotes Button -->
+            <a href="#" class="btn btn-get-quotes">Get Quotes</a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero container flex-column-center-end p-3">
+        <div class="hero-content">
+            <div class="hero-info flex-column-center pb-5">
+                <h2 class="text-white heading-hero" 
+                    data-aos="fade-down" 
+                    data-aos-duration="800" 
+                    data-aos-delay="100">
+                    Technology Solutions Excellence
+                </h2>
+                
+                <div class="typed" 
+                     data-aos="fade-right" 
+                     data-aos-duration="600" 
+                     data-aos-delay="300">
+                    <h3 class="text-primary">
+                        In <span id="typed-element"></span>
+                    </h3>
+                </div>
+                
+                <p class="text-white w-75" 
+                   data-aos="fade-up" 
+                   data-aos-duration="600" 
+                   data-aos-delay="500">
+                    Helping you grow through strategy, creativity and technology.
+                </p>
+            </div>
+
+            <div class="cta w-100">
+                <div class="social-links pb-4 d-flex-between" 
+                     data-aos="fade-in" 
+                     data-aos-duration="400">
+                    <a href="#" class="social-link icon-transition sm" target="_blank" 
+                       data-aos="zoom-in" 
+                       data-aos-duration="300" 
+                       data-aos-delay="700">
+                        <svg><use xlink:href="#twitter-old"></use></svg>
+                    </a>
+                    <a href="#" class="social-link icon-transition sm" target="_blank" 
+                       data-aos="zoom-in" 
+                       data-aos-duration="300" 
+                       data-aos-delay="750">
+                        <svg><use xlink:href="#facebook"></use></svg>
+                    </a>
+                    <a href="#" class="social-link icon-transition sm" target="_blank" 
+                       data-aos="zoom-in" 
+                       data-aos-duration="300" 
+                       data-aos-delay="800">
+                        <svg><use xlink:href="#linkedin"></use></svg>
+                    </a>
+                    <a href="#" class="social-link icon-transition sm" target="_blank" 
+                       data-aos="zoom-in" 
+                       data-aos-duration="300" 
+                       data-aos-delay="850">
+                        <svg><use xlink:href="#instagram"></use></svg>
+                    </a>
+                </div>
+
+                <div class="cta-buttons w-100 d-flex gap-4">
+                    <a href="#" class="btn btn-get-quotes" 
+                       data-aos="fade-right" 
+                       data-aos-duration="500" 
+                       data-aos-delay="900">
+                        Get Quotes
+                    </a>
+                    <a href="#" class="btn btn-outline" 
+                       data-aos="fade-left" 
+                       data-aos-duration="500" 
+                       data-aos-delay="950">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main 1 -->
+    <div class="main d-flex-center">
+        <!-- Main Content -->
+        <div class="container main-content">
+
+            <!-- Services section -->
+            <section class="services pt-6">
+                <div class="d-flex-baseline-between pb-5" 
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2>Our Services</h2>
+                    <a href="#" class="btn btn-primary">See Services</a>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="0">
+                        <div class="service-icon">
+                            <svg><use xlink:href="#monitor-code"></use></svg>
+                        </div>
+                        <div class="service-description">
+                            <h4>Web Development</h4>
+                            <p>Professional web solutions with modern technologies and responsive designs.</p>
+                        </div>
+                        <a class="overlay-link" href="#"></a>
+                    </div>
+                    
+                    <div class="service-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="100">
+                        <div class="service-icon">
+                            <svg><use xlink:href="#phone"></use></svg>
+                        </div>
+                        <div class="service-description">
+                            <h4>Mobile App Development</h4>
+                            <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                        </div>
+                        <a class="overlay-link" href="#"></a>
+                    </div>
+                    
+                    <div class="service-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="200">
+                        <div class="service-icon">
+                            <svg><use xlink:href="#cloud-iot-2"></use></svg>
+                        </div>
+                        <div class="service-description">
+                            <h4>Cloud Solutions</h4>
+                            <p>Scalable cloud infrastructure and deployment solutions for your business.</p>
+                        </div>
+                        <a class="overlay-link" href="#"></a>
+                    </div>
+
+                    <div class="service-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="0">
+                        <div class="service-icon">
+                            <svg><use xlink:href="#seo-monitor"></use></svg>
+                        </div>
+                        <div class="service-description">
+                            <h4>Digital Marketing</h4>
+                            <p>Strategic digital marketing campaigns to boost your online presence.</p>
+                        </div>
+                        <a class="overlay-link" href="#"></a>
+                    </div>
+                    
+                    <div class="service-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="100">
+                        <div class="service-icon">
+                            <svg><use xlink:href="#vector-nodes-6"></use></svg>
+                        </div>
+                        <div class="service-description">
+                            <h4>UX/UI Design</h4>
+                            <p>User-centered design experiences that engage and convert your audience.</p>
+                        </div>
+                        <a class="overlay-link" href="#"></a>
+                    </div>
+                    
+                    <div class="service-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="200">
+                        <div class="service-icon">
+                            <svg><use xlink:href="#database-2"></use></svg>
+                        </div>
+                        <div class="service-description">
+                            <h4>Data Analytics</h4>
+                            <p>Transform your data into actionable insights for better business decisions.</p>
+                        </div>
+                        <a class="overlay-link" href="#"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Process section -->
+            <section class="process">
+                <div class="d-flex-center pb-5"
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2 class="heading-lg">Our processes</h2>
+                </div>
+
+                <div class="circular-processes">
+                    <div class="process-info top d-flex-center"
+                        data-aos="fade-down"
+                        data-aos-delay="100">
+                        <div class="process-icon">
+                            <svg><use xlink:href="#code-1"></use></svg>
+                        </div>
+                        <div class="process-text">
+                            <span class="text">1. WE INVESTIGATE AND PLAN</span>
+                            <p>We analyze your requirements and create a comprehensive strategy tailored to your business goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-info rigth d-flex-center"
+                        data-aos="fade-left"
+                        data-aos-delay="150">
+                        <div class="process-icon">
+                            <svg><use xlink:href="#monitor-code"></use></svg>
+                        </div>
+                        <div class="process-text">
+                            <span class="text">2. WE CO-CREATE AND DEVELOP</span>
+                            <p>Working together, we build innovative solutions using cutting-edge technology and best practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="central-image rounded-circle">
+                        <img class="image" src="/assets/images/backgrounds/process.jpg" alt="Process">
+                    </div>
+
+                    <div class="process-info bottom d-flex-center"
+                        data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="process-icon">
+                            <svg><use xlink:href="#refresh-user-1"></use></svg>
+                        </div>
+                        <div class="process-text">
+                            <span class="text">3. WE ACCOMPANY AND GUARANTEE</span>
+                            <p>We provide ongoing support and maintenance to ensure your solution performs optimally over time.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-info left d-flex-center"
+                        data-aos="fade-right"
+                        data-aos-delay="250">
+                        <div class="process-icon">
+                            <svg><use xlink:href="#hand-shake"></use></svg>
+                        </div>
+                        <div class="process-text">
+                            <span class="text">4. WE DELIVER AND LAUNCH</span>
+                            <p>We deploy your solution with thorough testing and seamless implementation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Portfolio section -->
+            <section class="portfolio">
+                <div class="d-flex-center pb-5"
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2 class="heading-lg">Our Portfolio</h2>
+                </div>
+
+                <div class="portfolio-isotope" 
+                    data-aos="fade-up" 
+                    data-aos-delay="100">
+                    
+                    <div class="portfolio-filters-container d-flex-center pb-5">
+                        <ul class="portfolio-filters">
+                            <li class="filter-btn active" data-filter="*">All Projects</li>
+                            <li class="filter-btn" data-filter=".filter-web">Web Development</li>
+                            <li class="filter-btn" data-filter=".filter-mobile">Mobile Apps</li>
+                            <li class="filter-btn" data-filter=".filter-design">UI/UX Design</li>
+                            <li class="filter-btn" data-filter=".filter-branding">Branding</li>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item filter-web" 
+                            data-aos="zoom-in" 
+                            data-aos-delay="0">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img class="image" src="/assets/images/portfolio/project-1.png" alt="E-commerce Platform">
+                                    <a href="/assets/images/portfolio/project-1.png" class="portfolio-lightbox"></a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>E-commerce Platform</h4>
+                                    <span class="portfolio-category">Web Development</span>
+                                </div>
+                            </div>
+                            <a class="overlay-link" href="#"></a>
+                        </div>
+
+                        <div class="portfolio-item filter-mobile" 
+                            data-aos="zoom-in" 
+                            data-aos-delay="50">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img class="image" src="/assets/images/portfolio/project-2.png" alt="Fitness Tracking App">
+                                    <a href="/assets/images/portfolio/project-2.png" class="portfolio-lightbox"></a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Fitness Tracking App</h4>
+                                    <span class="portfolio-category">Mobile Apps</span>
+                                </div>
+                            </div>
+                            <a class="overlay-link" href="#"></a>
+                        </div>
+
+                        <div class="portfolio-item filter-design" 
+                            data-aos="zoom-in" 
+                            data-aos-delay="100">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img class="image" src="/assets/images/portfolio/project-3.png" alt="Banking Dashboard">
+                                    <a href="/assets/images/portfolio/project-3.png" class="portfolio-lightbox"></a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Banking Dashboard</h4>
+                                    <span class="portfolio-category">UI/UX Design</span>
+                                </div>
+                            </div>
+                            <a class="overlay-link" href="#"></a>
+                        </div>
+
+                        <div class="portfolio-item filter-branding" 
+                            data-aos="zoom-in" 
+                            data-aos-delay="150">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img class="image" src="/assets/images/portfolio/project-4.png" alt="Tech Startup Branding">
+                                    <a href="/assets/images/portfolio/project-4.png" class="portfolio-lightbox"></a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Tech Startup Brand</h4>
+                                    <span class="portfolio-category">Branding</span>
+                                </div>
+                            </div>
+                            <a class="overlay-link" href="#"></a>
+                        </div>
+
+                        <div class="portfolio-item filter-web" 
+                            data-aos="zoom-in" 
+                            data-aos-delay="200">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img class="image" src="/assets/images/portfolio/project-5.png" alt="Restaurant Website">
+                                    <a href="/assets/images/portfolio/project-5.png" class="portfolio-lightbox"></a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Restaurant Website</h4>
+                                    <span class="portfolio-category">Web Development</span>
+                                </div>
+                            </div>
+                            <a class="overlay-link" href="#"></a>
+                        </div>
+
+                        <div class="portfolio-item filter-mobile" 
+                            data-aos="zoom-in" 
+                            data-aos-delay="250">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img class="image" src="/assets/images/portfolio/project-6.png" alt="Travel Planning App">
+                                    <a href="/assets/images/portfolio/project-6.png" class="portfolio-lightbox"></a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>Travel Planning App</h4>
+                                    <span class="portfolio-category">Mobile Apps</span>
+                                </div>
+                            </div>
+                            <a class="overlay-link" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Plans section -->
+            <section class="pricing-plants">
+                <div class="d-flex-center pb-5"
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2 class="heading-lg">Pricing Plans</h2>
+                </div>
+
+                <div class="options-plants">
+                    <div class="plants" 
+                    data-aos="fade-left" 
+                    data-aos-delay="150">
+                        <div class="plant-header">
+                            <h2 class="mb-0">Basic</h2>
+                            <p>Perfect for small businesses and startups</p>
+                        </div>
+                        <div class="price d-flex-center">
+                            <span class="price-main">$37 <span class="price-discount">$50</span></span>
+                        </div>
+                        <div class="d-flex-center">
+                            <a href="#" class="btn btn-primary">Buy Basic Plan</a>
+                        </div>
+                        <div class="benefits">
+                            <div class="line"></div>
+                            <ul class="benefits-list">
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Up to 5 Pages Website</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Mobile Responsive Design</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Basic SEO Optimization</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Contact Form Integration</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">1 Month Free Support</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">SSL Certificate</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <div class="circle-x-svg">
+                                        <svg viewBox="0 0 24 24" width="18" height="18">
+                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            <line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="9" y1="9" x2="15" y2="15" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text">E-commerce Functionality</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <div class="circle-x-svg">
+                                        <svg viewBox="0 0 24 24" width="18" height="18">
+                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            <line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="9" y1="9" x2="15" y2="15" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text">Advanced Analytics</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <div class="circle-x-svg">
+                                        <svg viewBox="0 0 24 24" width="18" height="18">
+                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            <line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="9" y1="9" x2="15" y2="15" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text">Priority Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plants most-popular" 
+                    data-aos="fade-down" 
+                    data-aos-delay="100">
+                        <div class="tag-most-popular">
+                            <span>Most Popular</span>
+                        </div>
+
+                        <div class="plant-header">
+                            <h2 class="mb-0">Pro</h2>
+                            <p>Ideal for growing businesses</p>
+                        </div>
+                        <div class="price d-flex-center">
+                            <span class="price-main">$57 <span class="price-discount">$70</span></span>
+                        </div>
+                        <div class="d-flex-center">
+                            <a href="#" class="btn btn-primary">Buy Pro Plan</a>
+                        </div>
+                        <div class="benefits">
+                            <div class="line"></div>
+                            <ul class="benefits-list">
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Up to 5 Pages Website</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Mobile Responsive Design</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Basic SEO Optimization</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Contact Form Integration</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">1 Month Free Support</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">SSL Certificate</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">E-commerce Functionality</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Advanced Analytics</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <div class="circle-x-svg">
+                                        <svg viewBox="0 0 24 24" width="18" height="18">
+                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                            <line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="9" y1="9" x2="15" y2="15" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text">Priority Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="plants" 
+                    data-aos="fade-right" 
+                    data-aos-delay="150">
+                        <div class="plant-header">
+                            <h2 class="mb-0">Enterprise</h2>
+                            <p>For large-scale businesses</p>
+                        </div>
+                        <div class="price d-flex-center">
+                            <span class="price-main">$77 <span class="price-discount">$100</span></span>
+                        </div>
+                        <div class="d-flex-center">
+                            <a href="#" class="btn btn-primary">Buy Enterprise Plan</a>
+                        </div>
+                        <div class="benefits">
+                            <div class="line"></div>
+                            <ul class="benefits-list">
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Up to 5 Pages Website</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Mobile Responsive Design</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Basic SEO Optimization</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Contact Form Integration</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">1 Month Free Support</span>
+                                </li>
+                                <li class="benefit-item">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">SSL Certificate</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">E-commerce Functionality</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Advanced Analytics</span>
+                                </li>
+                                <li class="benefit-item unavailable">
+                                    <svg class="benefit-icon"><use xlink:href="#check-circle-1"></use></svg>
+                                    <span class="text">Priority Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials section -->
+            <section class="testimonials pb-5">
+                <div class="d-flex-center pb-5"
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2 class="heading-lg">Testimonials</h2>
+                </div>
+
+                <div class="testimonials-carousel universal-slider"
+                    data-aos="fade-up" 
+                    data-aos-delay="100">
+                    
+                    <!-- Slide 1 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-01.png" alt="Face 01">
+                                </div>
+                                <div class="info">
+                                    <span class="name">Adrien Jacob</span>
+                                    <span class="role">CEO</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-02.png" alt="Face 02">
+                                </div>
+                                <div class="info">
+                                    <span class="name">Diana Taylor</span>
+                                    <span class="role">Graphic Designer</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-03.png" alt="Face 03">
+                                </div>
+                                <div class="info">
+                                    <span class="name">Sarah Johnson</span>
+                                    <span class="role">Businesswoman</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-04.png" alt="Face 04">
+                                </div>
+                                <div class="info">
+                                    <span class="name">Michael Brown</span>
+                                    <span class="role">Marketing Director</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-02.png" alt="Face 02">
+                                </div>
+                                <div class="info">
+                                    <span class="name">Emma Wilson</span>
+                                    <span class="role">Product Manager</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 6 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-01.png" alt="Face 01">
+                                </div>
+                                <div class="info">
+                                    <span class="name">James Anderson</span>
+                                    <span class="role">Tech Lead</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 7 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-03.png" alt="Face 03">
+                                </div>
+                                <div class="info">
+                                    <span class="name">Lisa Martinez</span>
+                                    <span class="role">UX Designer</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 8 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-04.png" alt="Face 04">
+                                </div>
+                                <div class="info">
+                                    <span class="name">David Rodriguez</span>
+                                    <span class="role">Software Engineer</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 9 -->
+                    <div class="comment">
+                        <div class="d-flex flex-column gap-2">
+                            <svg class="quote-icon"><use xlink:href="#double-quotes-end-1"></use></svg>
+                            <div class="message">
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Maxime tempora ipsum dicta nesciunt, perspiciatis placeat molestias 
+                                    nemo vitae nulla tempore.
+                                </p>
+                            </div>
+                            <div class="info-user">
+                                <div class="image">
+                                    <img src="/assets/images/testimonials/face-02.png" alt="Face 02">
+                                </div>
+                                <div class="info">
+                                    <span class="name">Amanda Thompson</span>
+                                    <span class="role">Operations Manager</span>
+                                    <div class="rating">
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                        <svg class="star"><use xlink:href="#star-fat"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Counting info section -->
+    <section class="counting-info container">
+        <div class="counting-content">
+            <div class="info" 
+                data-aos="fade-down" 
+                data-aos-delay="100">
+                <h2 class="title">Have <span class="subinfo">25 Years</span> of Experiences</h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Blanditiis quod veniam temporibus eaque, a neque nulla.
+                </p>
+
+                <a href="#" class="btn btn-outline" 
+                    data-aos="fade-right" 
+                    data-aos-duration="500" 
+                    data-aos-delay="950">
+                    Get Started
+                </a>
+            </div>
+            <div class="box-counting">
+                <div class="counts" 
+                    data-aos="fade-down" 
+                    data-aos-delay="100">
+                    <svg><use xlink:href="#bulb-2"></use></svg>
+                    <span class="number" data-counter>3785+</span>
+                    <span class="label">Successful Projects</span>
+                </div>
+                <div class="counts"
+                    data-aos="fade-up" 
+                    data-aos-delay="100">
+                    <svg><use xlink:href="#hand-shake"></use></svg>
+                    <span class="number" data-counter>9800+</span>
+                    <span class="label">Satisfied Clients</span>
+                </div>
+                <div class="counts" 
+                    data-aos="fade-down" 
+                    data-aos-delay="100">
+                    <svg><use xlink:href="#message-3-text"></use></svg>
+                    <span class="number" data-counter>1052+</span>
+                    <span class="label">Support Tickets Resolved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main 2 -->
+    <div class="main d-flex-center pb-8">
+        <!-- Main Content -->
+        <div class="container main-content">
+            <!-- Client company section -->
+            <div class="client-companies pt-8">
+                <div class="customers-carousel universal-slider">
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-01.png" alt="Company 01">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-02.png" alt="Company 02">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-03.png" alt="Company 03">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-04.png" alt="Company 04">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-05.png" alt="Company 05">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-06.png" alt="Company 06">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-01.png" alt="Company 01">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-02.png" alt="Company 02">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-03.png" alt="Company 03">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-04.png" alt="Company 04">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-05.png" alt="Company 05">
+                    </div>
+                    <div class="client-company">
+                        <img class="image" src="./assets/images/companies/company-06.png" alt="Company 06">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team section -->
+            <section class="team">
+                <div class="d-flex-center pb-5"
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2 class="heading-lg">Our Team</h2>
+                </div>
+
+                <div class="team-content" 
+                    data-aos="fade-up" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <div class="item-team">
+                        <img class="image" src="/assets/images/team/sarahjohnson.png" alt="Sarah Johnson">
+
+                        <div class="social-info">
+                            <div class="info">
+                                <span class="name">Sarah Johnson</span>
+                                <span class="rol">CEO & Founder</span>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#twitter-old"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#facebook"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#linkedin"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#instagram"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-team">
+                        <img class="image" src="/assets/images/team/jameswilson.png" alt="James Wilson">
+
+                        <div class="social-info">
+                            <div class="info">
+                                <span class="name">James Wilson</span>
+                                <span class="rol">Lead Developer</span>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#twitter-old"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#facebook"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#linkedin"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#instagram"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-team">
+                        <img class="image" src="/assets/images/team/emmarodriguez.png" alt="Emma Rodriguez">
+
+                        <div class="social-info">
+                            <div class="info">
+                                <span class="name">Emma Rodriguez</span>
+                                <span class="rol">UI/UX Designer</span>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#twitter-old"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#facebook"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#linkedin"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#instagram"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-team">
+                        <img class="image" src="/assets/images/team/davidthompson.png" alt="David Thompson">
+
+                        <div class="social-info">
+                            <div class="info">
+                                <span class="name">David Thompson</span>
+                                <span class="rol">Marketing Director</span>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#twitter-old"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#facebook"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#linkedin"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition sm" target="_blank">
+                                    <svg><use xlink:href="#instagram"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <div class="container">
+                    <div class="faq-header text-center mb-6" 
+                        data-aos="fade-up" 
+                        data-aos-duration="600">
+                        <h2 class="heading-lg">Frequently Asked Questions</h2>
+                        <p class="subtitle">Find answers to the most common questions about our services</p>
+                    </div>
+
+                    <div class="faq-content">
+                        <div class="faq-item" 
+                            data-aos="fade-up" 
+                            data-aos-delay="100">
+                            <div class="faq-question">
+                                <h3 class="question-text">What services do you offer?</h3>
+                                <button class="faq-toggle" aria-expanded="false" aria-label="Toggle answer">
+                                    <svg class="faq-icon">
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>We offer a comprehensive range of IT services including web development, mobile app development, cloud solutions, cybersecurity, and digital transformation consulting. Our team specializes in creating custom solutions tailored to your business needs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" 
+                            data-aos="fade-up" 
+                            data-aos-delay="200">
+                            <div class="faq-question">
+                                <h3 class="question-text">How long does a typical project take?</h3>
+                                <button class="faq-toggle" aria-expanded="false" aria-label="Toggle answer">
+                                    <svg class="faq-icon">
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>Project timelines vary depending on complexity and scope. A simple website might take 2-4 weeks, while complex enterprise applications can take 3-6 months. We provide detailed timelines during our initial consultation and keep you updated throughout the development process.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" 
+                            data-aos="fade-up" 
+                            data-aos-delay="300">
+                            <div class="faq-question">
+                                <h3 class="question-text">Do you provide ongoing support and maintenance?</h3>
+                                <button class="faq-toggle" aria-expanded="false" aria-label="Toggle answer">
+                                    <svg class="faq-icon">
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>Yes, we offer comprehensive maintenance and support packages. This includes regular updates, security patches, performance monitoring, and technical support. We believe in building long-term relationships with our clients.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" 
+                            data-aos="fade-up" 
+                            data-aos-delay="400">
+                            <div class="faq-question">
+                                <h3 class="question-text">What is your pricing model?</h3>
+                                <button class="faq-toggle" aria-expanded="false" aria-label="Toggle answer">
+                                    <svg class="faq-icon">
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>Our pricing is project-based and depends on the scope, complexity, and timeline. We offer transparent pricing with no hidden fees. After understanding your requirements, we provide a detailed quote with breakdown of costs for each phase of the project.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" 
+                            data-aos="fade-up" 
+                            data-aos-delay="500">
+                            <div class="faq-question">
+                                <h3 class="question-text">Can you work with our existing team?</h3>
+                                <button class="faq-toggle" aria-expanded="false" aria-label="Toggle answer">
+                                    <svg class="faq-icon">
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>Absolutely! We frequently collaborate with in-house teams and can integrate seamlessly with your existing workflows. We're flexible in our approach and can work as an extension of your team or provide guidance and training to your staff.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" 
+                            data-aos="fade-up" 
+                            data-aos-delay="600">
+                            <div class="faq-question">
+                                <h3 class="question-text">Do you sign NDAs and ensure data security?</h3>
+                                <button class="faq-toggle" aria-expanded="false" aria-label="Toggle answer">
+                                    <svg class="faq-icon">
+                                        <use xlink:href="#chevron-down"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content">
+                                    <p>Yes, we take data security very seriously. We're happy to sign NDAs and follow strict security protocols. All our processes are compliant with industry standards, and we implement robust security measures to protect your sensitive information throughout the project lifecycle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Contact info section -->
+    <section class="contact-info container">
+        <div class="contact-content">
+            <div class="contact-header text-center" 
+                data-aos="fade-up" 
+                data-aos-duration="600">
+                <h2 class="contact-title">Ready to Start Your Project?</h2>
+                <p class="contact-description">
+                    Let's transform your ideas into reality. Get in touch with our expert team 
+                    and discover how we can help your business grow with cutting-edge technology solutions.
+                </p>
+            </div>
+            
+            <div class="contact-actions  d-flex-center" 
+                data-aos="fade-up" 
+                data-aos-delay="200">
+                <a href="#" class="btn btn-get-quotes">
+                    Get Started Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main 3 -->
+    <div class="main d-flex-center pt-6">
+        <!-- Main Content -->
+        <div class="container main-content">
+            
+            <!-- Blog section -->
+            <section class="blog">
+                <div class="d-flex-baseline-between pb-5" 
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2>Latest Blog Posts</h2>
+                    <a href="#" class="btn btn-primary">View All Posts</a>
+                </div>
+
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="0">
+                        <div class="blog-image">
+                            <img class="image" src="./assets/images/blog/post-1.png" alt="The Future of Web Development">
+                            <div class="blog-category">
+                                <span class="category-tag">Technology</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <div class="blog-date">
+                                    <svg><use xlink:href="#calendar"></use></svg>
+                                    <span>March 15, 2024</span>
+                                </div>
+                                <div class="blog-author">
+                                    <svg><use xlink:href="#user"></use></svg>
+                                    <span>Sarah Johnson</span>
+                                </div>
+                            </div>
+                            <h3 class="blog-title">The Future of Web Development: Trends to Watch in 2024</h3>
+                            <p class="blog-excerpt">
+                                Discover the latest trends shaping the web development landscape, 
+                                from AI-powered tools to progressive web applications and beyond.
+                            </p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more">
+                                    Read More
+                                    <svg><use xlink:href="#arrow-right"></use></svg>
+                                </a>
+                                <div class="blog-stats">
+                                    <span class="reading-time">
+                                        <svg><use xlink:href="#clock"></use></svg>
+                                        5 min read
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="overlay-link" href="pages/blog/article.html"></a>
+                    </article>
+
+                    <!-- Blog Post 2 -->
+                    <article class="blog-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="100">
+                        <div class="blog-image">
+                            <img class="image" src="./assets/images/blog/post-2.png" alt="Mobile App Security Best Practices">
+                            <div class="blog-category">
+                                <span class="category-tag">Security</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <div class="blog-date">
+                                    <svg><use xlink:href="#calendar"></use></svg>
+                                    <span>March 10, 2024</span>
+                                </div>
+                                <div class="blog-author">
+                                    <svg><use xlink:href="#user"></use></svg>
+                                    <span>James Wilson</span>
+                                </div>
+                            </div>
+                            <h3 class="blog-title">Mobile App Security: Best Practices for Developers</h3>
+                            <p class="blog-excerpt">
+                                Learn essential security measures every mobile developer should implement 
+                                to protect user data and ensure app integrity.
+                            </p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more">
+                                    Read More
+                                    <svg><use xlink:href="#arrow-right"></use></svg>
+                                </a>
+                                <div class="blog-stats">
+                                    <span class="reading-time">
+                                        <svg><use xlink:href="#clock"></use></svg>
+                                        7 min read
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="overlay-link" href="pages/blog/article.html"></a>
+                    </article>
+
+                    <!-- Blog Post 3 -->
+                    <article class="blog-card" 
+                        data-aos="fade-up" 
+                        data-aos-delay="200">
+                        <div class="blog-image">
+                            <img class="image" src="./assets/images/blog/post-3.png" alt="Cloud Migration Strategies">
+                            <div class="blog-category">
+                                <span class="category-tag">Cloud</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <div class="blog-date">
+                                    <svg><use xlink:href="#calendar"></use></svg>
+                                    <span>March 5, 2024</span>
+                                </div>
+                                <div class="blog-author">
+                                    <svg><use xlink:href="#user"></use></svg>
+                                    <span>Emma Rodriguez</span>
+                                </div>
+                            </div>
+                            <h3 class="blog-title">Cloud Migration Strategies for Modern Businesses</h3>
+                            <p class="blog-excerpt">
+                                A comprehensive guide to successfully migrating your business infrastructure 
+                                to the cloud with minimal downtime and maximum efficiency.
+                            </p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more">
+                                    Read More
+                                    <svg><use xlink:href="#arrow-right"></use></svg>
+                                </a>
+                                <div class="blog-stats">
+                                    <span class="reading-time">
+                                        <svg><use xlink:href="#clock"></use></svg>
+                                        6 min read
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="overlay-link" href="pages/blog/article.html"></a>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Contact Form section -->
+            <section class="contact-form pb-7">
+                <div class="d-flex-center pb-5"
+                    data-aos="fade-down" 
+                    data-aos-duration="600" 
+                    data-aos-delay="0">
+                    <h2 class="heading-lg">Contact Us</h2>
+                </div>
+
+                <div class="contact-form-container"
+                    data-aos="fade-up" 
+                    data-aos-delay="100">
+                    
+                    <div class="contact-form-content">
+                        <!-- Contact Info -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-header">
+                                <h3>Let's Start a Conversation</h3>
+                                <p>Ready to transform your business with cutting-edge technology? Get in touch with our team of experts.</p>
+                            </div>
+
+                            <div class="contact-details">
+                                <div class="contact-detail-item">
+                                    <div class="contact-icon">
+                                        <svg><use xlink:href="#phone"></use></svg>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="label">Phone</span>
+                                        <span class="value">+1 (555) 123-4567</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-item">
+                                    <div class="contact-icon">
+                                        <svg><use xlink:href="#envelope-1"></use></svg>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="label">Email</span>
+                                        <span class="value">hello@itagency.com</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-item">
+                                    <div class="contact-icon">
+                                        <svg><use xlink:href="#map-marker-1"></use></svg>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="label">Address</span>
+                                        <span class="value">123 Tech Street, Digital City, DC 12345</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-item">
+                                    <div class="contact-icon">
+                                        <svg><use xlink:href="#alarm-1"></use></svg>
+                                    </div>
+                                    <div class="contact-text">
+                                        <span class="label">Business Hours</span>
+                                        <span class="value">Mon - Fri: 9:00 AM - 6:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-social">
+                                <span class="social-label">Follow Us</span>
+                                <div class="social-links">
+                                    <a href="#" class="social-link icon-transition sm" target="_blank">
+                                        <svg><use xlink:href="#twitter-old"></use></svg>
+                                    </a>
+                                    <a href="#" class="social-link icon-transition sm" target="_blank">
+                                        <svg><use xlink:href="#facebook"></use></svg>
+                                    </a>
+                                    <a href="#" class="social-link icon-transition sm" target="_blank">
+                                        <svg><use xlink:href="#linkedin"></use></svg>
+                                    </a>
+                                    <a href="#" class="social-link icon-transition sm" target="_blank">
+                                        <svg><use xlink:href="#instagram"></use></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="contact-form-card">
+                            <form id="contactForm" action="contact.php" method="POST" class="contact-form-fields">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                    <span class="form-error" id="name-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                    <span class="form-error" id="email-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input">
+                                    <span class="form-error" id="phone-error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Company</label>
+                                    <input type="text" id="company" name="company" class="form-input">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="service" class="form-label">Service Interested In</label>
+                                    <select id="service" name="service" class="form-select">
+                                        <option value="">Select a service</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="mobile-app">Mobile App Development</option>
+                                        <option value="cloud-solutions">Cloud Solutions</option>
+                                        <option value="digital-marketing">Digital Marketing</option>
+                                        <option value="ui-ux-design">UI/UX Design</option>
+                                        <option value="data-analytics">Data Analytics</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="budget" class="form-label">Project Budget</label>
+                                    <select id="budget" name="budget" class="form-select">
+                                        <option value="">Select budget range</option>
+                                        <option value="under-5k">Under $5,000</option>
+                                        <option value="5k-15k">$5,000 - $15,000</option>
+                                        <option value="15k-50k">$15,000 - $50,000</option>
+                                        <option value="50k-100k">$50,000 - $100,000</option>
+                                        <option value="over-100k">Over $100,000</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-group-full">
+                                    <label for="message" class="form-label">Project Details *</label>
+                                    <textarea id="message" name="message" class="form-textarea" rows="5" 
+                                            placeholder="Tell us about your project requirements, goals, and any specific features you need..." required></textarea>
+                                    <span class="form-error" id="message-error"></span>
+                                </div>
+
+                                <div class="form-group form-group-full">
+                                    <label class="form-checkbox-container">
+                                        <input type="checkbox" name="newsletter" class="form-checkbox">
+                                        <span class="form-checkmark"></span>
+                                        <span class="form-checkbox-text">Subscribe to our newsletter for updates and tech insights</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group form-group-full">
+                                    <label class="form-checkbox-container">
+                                        <input type="checkbox" name="privacy" class="form-checkbox" required>
+                                        <span class="form-checkmark"></span>
+                                        <span class="form-checkbox-text">I agree to the <a href="#privacy" class="form-link">Privacy Policy</a> and <a href="#terms" class="form-link">Terms of Service</a> *</span>
+                                    </label>
+                                    <span class="form-error" id="privacy-error"></span>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary form-submit-btn">
+                                        <span>Send Message</span>
+                                    </button>
+                                </div>
+
+                                <div class="form-status">
+                                    <div class="form-success" id="form-success" style="display: none;">
+                                        <svg><use xlink:href="#lni-checkmark-circle"></use></svg>
+                                        <span>Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.</span>
+                                    </div>
+                                    <div class="form-error-general" id="form-error" style="display: none;">
+                                        <svg><use xlink:href="#lni-warning"></use></svg>
+                                        <span>Something went wrong. Please try again or contact us directly.</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer pb-5">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Company Info -->
+                    <div class="footer-section footer-about" 
+                        data-aos="fade-up" 
+                        data-aos-delay="100">
+                        <div class="footer-logo">
+                            <img class="image" src="./assets/images/logo-01.png" alt="ITAgency Logo">
+                        </div>
+                        <p class="footer-description">
+                            Transforming businesses through innovative technology solutions. 
+                            We deliver cutting-edge web development, mobile apps, and digital 
+                            transformation services that drive growth and success.
+                        </p>
+                        
+                        <div class="footer-social">
+                            <span class="social-label">Follow Us</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link icon-transition" target="_blank" 
+                                data-aos="zoom-in" 
+                                data-aos-delay="200">
+                                    <svg><use xlink:href="#twitter-old"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition" target="_blank" 
+                                data-aos="zoom-in" 
+                                data-aos-delay="250">
+                                    <svg><use xlink:href="#facebook"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition" target="_blank" 
+                                data-aos="zoom-in" 
+                                data-aos-delay="300">
+                                    <svg><use xlink:href="#linkedin"></use></svg>
+                                </a>
+                                <a href="#" class="social-link icon-transition" target="_blank" 
+                                data-aos="zoom-in" 
+                                data-aos-delay="350">
+                                    <svg><use xlink:href="#instagram"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Copyright -->
+                        <div class="footer-copyright" 
+                            data-aos="fade-up" 
+                            data-aos-delay="500">
+                            <p>ITAgency © 2025 - Designed with ❤️ by Ajcndev</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="footer-section footer-links" 
+                        data-aos="fade-up" 
+                        data-aos-delay="200">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#home" class="footer-link">Home</a></li>
+                            <li><a href="#about" class="footer-link">About Us</a></li>
+                            <li><a href="#services" class="footer-link">Services</a></li>
+                            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                            <li><a href="#team" class="footer-link">Team</a></li>
+                            <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                            <li><a href="#blogs" class="footer-link">Blog</a></li>
+                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                            <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#terms" class="footer-link">Terms of Service</a></li>
+                            <li><a href="#cookies" class="footer-link">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-section footer-services" 
+                        data-aos="fade-up" 
+                        data-aos-delay="300">
+                        <h4 class="footer-title">Our Services</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#" class="footer-link">Web Development</a></li>
+                            <li><a href="#" class="footer-link">Mobile App Development</a></li>
+                            <li><a href="#" class="footer-link">Cloud Solutions</a></li>
+                            <li><a href="#" class="footer-link">Digital Marketing</a></li>
+                            <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                            <li><a href="#" class="footer-link">Data Analytics</a></li>
+                            <li><a href="#" class="footer-link">Cybersecurity</a></li>
+                            <li><a href="#" class="footer-link">IT Consulting</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section footer-contact" 
+                        data-aos="fade-up" 
+                        data-aos-delay="400">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <div class="footer-contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg><use xlink:href="#map-marker-1"></use></svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Address</span>
+                                    <span class="contact-value">123 Tech Street, Digital City, DC 12345</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg><use xlink:href="#phone"></use></svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Phone</span>
+                                    <span class="contact-value">+1 (555) 123-4567</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg><use xlink:href="#envelope-1"></use></svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">hello@itagency.com</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg><use xlink:href="#alarm-1"></use></svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Business Hours</span>
+                                    <span class="contact-value">Mon - Fri: 9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="footer-section footer-newsletter" 
+                        data-aos="fade-up" 
+                        data-aos-delay="500">
+                        <h4 class="footer-title">Newsletter</h4>
+                        <p class="newsletter-description">
+                            Subscribe to our newsletter for the latest tech insights and updates.
+                        </p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <div class="newsletter-input-group">
+                                <input type="email" 
+                                    class="newsletter-input" 
+                                    placeholder="Enter your email address" 
+                                    required>
+                                <button type="submit" class="newsletter-btn">
+                                    <svg><use xlink:href="#arrow-right"></use></svg>
+                                </button>
+                            </div>
+                            <label class="newsletter-checkbox">
+                                <input name="newsletter-agreement" type="checkbox">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">I agree to the <a href="#privacy">Privacy Policy</a></span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24">
+            <path d="M7 14l5-5 5 5z"/>
+        </svg>
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="assets/lib/particles/particles.min.js"></script>
+    <script src="assets/lib/aos/aos.js"></script>
+    <script src="assets/lib/typed/typed.umd.js"></script>
+    
+    <script src="assets/js/universal-slider.js"></script>
+    <script src="assets/js/custom-isotope.js"></script>
+    <script src="assets/js/animate-counters.js"></script>
+    <script src="assets/js/faq-accordion.js"></script>
+    <script src="assets/js/contact-form-demo.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

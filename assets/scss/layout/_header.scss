@@ -1,0 +1,502 @@
+// Import Sass modules for variables, mixins, and map functions
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mix;
+@use 'sass:map';
+
+// Main header component with sticky positioning and responsive behavior
+.header {
+  position: sticky;                           // Stays at top when scrolling
+  top: 0px;
+  width: 100%;
+  padding: map.get(v.$spacers, 3) 0;
+  z-index: map.get(v.$z-indices, 'navbar');   // High z-index to stay above content
+
+  .container {
+    position: relative;
+    
+    // Tablet/Mobile: Flexbox layout with three main elements
+    // Layout order: Logo - Button - Toggle
+    @include mix.respond-to-max('lg') {
+      @include mix.flex(row, space-between, center);
+    }
+  }
+
+  // Logo section with responsive sizing
+  .logo {
+    height: 35px;
+    z-index: 1001;                            // Above mobile menu overlay
+    
+    // Tablet/Mobile: first position in flex layout
+    @include mix.respond-to-max('lg') {
+      order: 1;
+    }
+    
+    // Progressive sizing across breakpoints
+    @include mix.respond-to-max('md') {
+      width: 35%;
+      height: 45px;
+    }
+    
+    @include mix.respond-to-min('lg') {
+      width: 18%;
+      height: 50px;
+    }
+    
+    @include mix.respond-to-min('xl') {
+      width: 20%;
+      height: 55px;
+      max-width: 200px;                       // Prevent oversizing on large screens
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;                    // Maintain aspect ratio
+    }
+
+    // Clickable overlay for logo link
+    .overlay-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+
+  // Navigation container with dual layout system
+  .navbar {
+    // Desktop: static positioning (normal document flow)
+    @include mix.respond-to-min('lg') {
+      position: static;
+      background: transparent;
+      height: auto;
+    }
+
+    // Tablet/Mobile: full-screen sliding overlay menu
+    @include mix.respond-to-max('lg') {
+      position: fixed;
+      left: 0;
+      top: -100vh;                            // Hidden above viewport initially
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(v.$black, 0.95); // Semi-transparent dark background
+      backdrop-filter: blur(10px);            // Glassmorphism effect
+      @include mix.flex(column, flex-start, flex-start);
+      z-index: 1000;
+      @include mix.transition(top 0.3s ease); // Smooth slide animation
+      padding-top: 80px;                      // Space for header content
+      overflow-y: auto;                       // Allow scrolling for long menus
+
+      // Active state: slide down into view
+      &.mobile-menu-open {
+        top: 0;
+      }
+    }
+
+    // Main navigation menu
+    .nav-menu {
+      @include mix.flex(row, flex-start, center);
+      gap: 10px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      // Desktop: horizontal layout with larger gaps
+      @include mix.respond-to-min('lg') {
+        @include mix.flex-direction(row);
+        gap: 30px;
+      }
+
+      // Tablet/Mobile: vertical stacked layout
+      @include mix.respond-to-max('lg') {
+        @include mix.flex-direction(column);
+        @include mix.align-items(flex-start);
+        gap: 0;
+        text-align: left;
+        padding: 0 map.get(v.$spacers, 4);
+        max-width: 400px;                     // Constrain width for better UX
+        margin: 0 auto;                       // Center the menu
+      }
+
+      // Navigation list items
+      > li {
+        @include mix.respond-to-max('lg') {
+          width: 100%;                        // Full width on mobile
+        }
+        
+        @include mix.respond-to-min('lg') {
+          width: auto;                        // Auto width on desktop
+        }
+      }
+
+      // Base navigation link styles
+      .nav-link {
+        color: v.$white;
+        text-decoration: none;
+        font-weight: map.get(v.$font-weights, 'medium');
+        @include mix.transition(v.$transition-base);
+        position: relative;
+        display: block;
+
+        // Desktop styling
+        @include mix.respond-to-min('lg') {
+          padding: 5px 0;
+          font-size: map.get(v.$font-sizes, 'base');
+        }
+
+        // Tablet/Mobile styling with borders
+        @include mix.respond-to-max('lg') {
+          padding: map.get(v.$spacers, 3) 0;
+          font-size: map.get(v.$font-sizes, 'lg');
+          width: 100%;
+          border-bottom: 1px solid rgba(v.$white, 0.1); // Subtle separator
+        }
+        
+        // Desktop hover effect: animated underline
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background-color: v.$primary;
+          @include mix.transition(all 0.3s ease);
+          @include mix.transform(translateX(-50%));
+
+          // Hide underline effect on mobile
+          @include mix.respond-to-max('lg') {
+            display: none;
+          }
+        }
+        
+        // Hover and active states
+        &:hover, &.active {
+          color: v.$primary;
+          
+          &::after {
+            width: 100%;                      // Expand underline to full width
+          }
+        }
+      }
+
+      // Dropdown menu component
+      .dropdown {
+        position: relative;
+        
+        @include mix.respond-to-max('lg') {
+          width: 100%;
+        }
+
+        // Dropdown trigger button
+        .dropdown-toggle {
+          cursor: pointer;
+          color: v.$white;
+          text-decoration: none;
+          font-weight: map.get(v.$font-weights, 'medium');
+          @include mix.transition(v.$transition-base);
+          position: relative;
+          display: block;
+
+          // Desktop dropdown trigger
+          @include mix.respond-to-min('lg') {
+            padding: 5px 0;
+            font-size: map.get(v.$font-sizes, 'base');
+          }
+
+          // Mobile dropdown trigger with flexbox for arrow positioning
+          @include mix.respond-to-max('lg') {
+            padding: map.get(v.$spacers, 3) 0;
+            font-size: map.get(v.$font-sizes, 'lg');
+            width: 100%;
+            border-bottom: 1px solid rgba(v.$white, 0.1);
+            @include mix.flex(row, space-between, center);
+          }
+          
+          // Dropdown arrow indicator
+          &::after {
+            content: '▼';                     // Unicode down arrow
+            font-size: 10px;
+            @include mix.transition(transform 0.3s ease);
+
+            @include mix.respond-to-min('lg') {
+              position: relative;
+              left: 5px;
+            }
+
+            @include mix.respond-to-max('lg') {
+              font-size: 12px;
+            }
+          }
+
+          // Rotate arrow when dropdown is active
+          &.active::after {
+            @include mix.transform(rotate(180deg));
+          }
+
+          // Desktop hover underline effect (similar to nav-link)
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: v.$primary;
+            @include mix.transition(all 0.3s ease);
+            @include mix.transform(translateX(-50%));
+
+            @include mix.respond-to-max('lg') {
+              display: none;
+            }
+          }
+
+          &:hover {
+            color: v.$primary;
+            
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+
+        // Dropdown menu container
+        .dropdown-menu {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          // Mobile: collapsible submenu with smooth animation
+          @include mix.respond-to-max('lg') {
+            position: static;
+            background-color: rgba(v.$white, 0.05); // Subtle background tint
+            backdrop-filter: blur(10px);            // Additional blur effect
+            margin-left: map.get(v.$spacers, 3);    // Indent submenu
+            border-left: 2px solid rgba(v.$primary, 0.3); // Visual hierarchy indicator
+            opacity: 0;
+            visibility: hidden;
+            max-height: 0;                          // Collapsed state
+            overflow: hidden;
+            @include mix.transition(all 0.3s ease);
+
+            // Expanded state
+            &.dropdown-open {
+              opacity: 1;
+              visibility: visible;
+              max-height: 500px;                    // Generous max height
+              padding: map.get(v.$spacers, 2) 0;
+            }
+          }
+
+          // Desktop: positioned dropdown overlay
+          @include mix.respond-to-min('lg') {
+            position: absolute;
+            top: 100%;                            // Position below trigger
+            left: 50%;
+            @include mix.transform(translateX(-50%)); // Center horizontally
+            background-color: v.$white;
+            @include mix.box-shadow(v.$box-shadow-lg);
+            min-width: 180px;
+            padding: map.get(v.$spacers, 2) 0;
+            z-index: map.get(v.$z-indices, 'dropdown');
+            opacity: 0;
+            visibility: hidden;
+            @include mix.transform(translateX(-50%) translateY(-10px)); // Start slightly above
+            @include mix.transition(v.$transition-base);
+            @include mix.border-radius(v.$border-radius);
+          }
+
+          // Individual dropdown items
+          .dropdown-item {
+            display: block;
+            padding: map.get(v.$spacers, 2) map.get(v.$spacers, 3);
+            text-decoration: none;
+            font-family: v.$font-family-sans;
+            font-weight: map.get(v.$font-weights, 'regular');
+            @include mix.transition(v.$transition-base);
+
+            // Mobile dropdown item styling
+            @include mix.respond-to-max('lg') {
+              color: v.$white;
+              font-size: map.get(v.$font-sizes, 'base');
+              text-align: left;
+              border-bottom: 1px solid rgba(v.$white, 0.05);
+
+              &:last-child {
+                border-bottom: none;            // Remove border from last item
+              }
+            }
+
+            // Desktop dropdown item styling
+            @include mix.respond-to-min('lg') {
+              color: v.$dark-gray;
+              font-size: map.get(v.$font-sizes, 'sm');
+            }
+            
+            // Hover effect with left padding animation
+            &:hover {
+              background-color: rgba(v.$primary, 0.1);
+              color: v.$primary;
+              padding-left: map.get(v.$spacers, 4); // Slide effect
+
+              @include mix.respond-to-max('lg') {
+                background-color: rgba(v.$primary, 0.2);
+              }
+            }
+          }
+        }
+
+        // Desktop: show dropdown on hover
+        @include mix.respond-to-min('lg') {
+          &:hover {
+            .dropdown-toggle {
+              color: v.$primary;
+              
+              &::before {
+                width: 100%;
+              }
+            }
+
+            .dropdown-menu {
+              opacity: 1;
+              visibility: visible;
+              @include mix.transform(translateX(-50%) translateY(0)); // Slide into position
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Call-to-action button
+  .btn-get-quotes {
+    white-space: nowrap;                      // Prevent text wrapping
+    z-index: 1001;                           // Above mobile menu
+
+    // Mobile: second position in flex layout (center)
+    @include mix.respond-to-max('lg') {
+      order: 2;
+    }
+
+    // Smaller button on mobile
+    @include mix.respond-to-max('sm') {
+      padding: map.get(v.$spacers, 1) map.get(v.$spacers, 2);
+      font-size: map.get(v.$font-sizes, 'sm');
+    }
+  }
+
+  // Mobile hamburger menu toggle button
+  .mobile-menu-toggle {
+    @include mix.flex(column, center, center);
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;                           // Above mobile menu overlay
+    position: relative;
+
+    // Hidden on desktop
+    @include mix.respond-to-min('lg') {
+      display: none;
+    }
+
+    // Mobile: third position in flex layout (end)
+    @include mix.respond-to-max('lg') {
+      order: 3;
+    }
+
+    // Hamburger menu lines
+    .hamburger-line {
+      width: 25px;
+      height: 3px;
+      background-color: v.$white;
+      margin: 2px 0;
+      @include mix.transition(v.$transition-smooth);
+      transform-origin: center;               // Rotation point for animations
+
+      // Initial positions
+      &:nth-child(1) {
+        @include mix.transform(translateY(0));
+      }
+
+      &:nth-child(2) {
+        opacity: 1;
+      }
+
+      &:nth-child(3) {
+        @include mix.transform(translateY(0));
+      }
+    }
+
+    // Active state: hamburger transforms to X
+    &.active {
+      .hamburger-line {
+        &:nth-child(1) {
+          @include mix.transform(translateY(7px) rotate(45deg)); // Top line rotates down and right
+        }
+
+        &:nth-child(2) {
+          opacity: 0;                         // Middle line fades out
+        }
+
+        &:nth-child(3) {
+          @include mix.transform(translateY(-7px) rotate(-45deg)); // Bottom line rotates up and left
+        }
+      }
+    }
+  }
+
+  // Header scroll states for dynamic styling
+  
+  // Transparent state (initial/top of page)
+  &.header-transparent {
+    background-color: transparent;
+    @include mix.transition(all 0.4s);
+  }
+
+  // Scrolled state (when page is scrolled)
+  &.header-scrolled {
+    background-color: v.$white;              // Solid background when scrolled
+    @include mix.box-shadow(v.$box-shadow);  // Add shadow for depth
+    @include mix.transition(all 0.4s);
+
+    // Change hamburger lines to dark when on white background
+    .mobile-menu-toggle .hamburger-line {
+      background-color: v.$black;
+    }
+
+    // Desktop navigation text changes to dark
+    .navbar .nav-menu .nav-link {
+      @include mix.respond-to-min('lg') {
+        color: v.$black;                      // Dark text on white background
+      }
+
+      @include mix.respond-to-max('lg') {
+        color: v.$white;                      // Keep white text in mobile overlay
+      }
+
+      &:hover, &.active {
+        color: v.$primary;                    // Primary color for interactions
+      }
+    }
+
+    // Dropdown toggle text changes
+    .navbar .nav-menu .dropdown .dropdown-toggle {
+      @include mix.respond-to-min('lg') {
+        color: v.$black;
+      }
+
+      @include mix.respond-to-max('lg') {
+        color: v.$white;
+      }
+
+      &:hover {
+        color: v.$primary;
+      }
+    }
+  }
+}
